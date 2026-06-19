@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gyrtjk.github.io/zh-app-leyusports-com-cn/sitemap.xml
