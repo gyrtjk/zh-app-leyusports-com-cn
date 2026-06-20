@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>im体育 · 产品说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f2f4f6;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1f2937;
+            line-height: 1.6;
+            padding: 2rem 1.2rem;
+        }
+
+        .page {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /* hero 区域 */
+        .hero {
+            text-align: center;
+            padding: 2.8rem 1.5rem 2rem;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e9edf2;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: #111827;
+            margin-bottom: 0.6rem;
+        }
+
+        .hero .sub {
+            font-size: 1.05rem;
+            color: #4b5563;
+            max-width: 640px;
+            margin: 0 auto;
+            font-weight: 350;
+        }
+
+        /* 卡片通用 */
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 1.6rem 1.8rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+            transition: box-shadow 0.2s ease;
+            flex: 1 1 260px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+            color: #1f2937;
+            border-bottom: 2px solid #eef2f6;
+            padding-bottom: 0.3rem;
+        }
+
+        .card p, .card li {
+            font-size: 0.95rem;
+            color: #374151;
+        }
+
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .card li {
+            padding: 0.25rem 0;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .card li::before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            color: #6b7280;
+            font-weight: 700;
+        }
+
+        /* 通栏卡片 */
+        .full-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 1.8rem 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+            margin-top: 1.5rem;
+        }
+
+        .full-card h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+            color: #111827;
+        }
+
+        .full-card p {
+            margin-bottom: 0.75rem;
+            color: #374151;
+        }
+
+        .faq-item {
+            margin-top: 0.9rem;
+            padding-top: 0.8rem;
+            border-top: 1px solid #f0f2f5;
+        }
+
+        .faq-item:first-of-type {
+            border-top: none;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            color: #1f2937;
+            margin-bottom: 0.25rem;
+        }
+
+        .note {
+            background: #f8fafc;
+            border-left: 3px solid #cbd5e1;
+            padding: 0.8rem 1.2rem;
+            border-radius: 0 10px 10px 0;
+            margin-top: 0.8rem;
+            font-size: 0.92rem;
+            color: #475569;
+        }
+
+        .inline-link {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 450;
+            border-bottom: 1px solid #bfd4fd;
+            transition: border-color 0.15s;
+        }
+
+        .inline-link:hover {
+            border-bottom-color: #2563eb;
+        }
+
+        .footer-note {
+            margin-top: 2.5rem;
+            font-size: 0.85rem;
+            text-align: center;
+            color: #6b7280;
+            border-top: 1px solid #dce1e8;
+            padding-top: 1.8rem;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+
+            .hero .sub {
+                font-size: 0.95rem;
+            }
+
+            .card {
+                padding: 1.2rem 1.3rem;
+                flex: 1 1 100%;
+            }
+
+            .full-card {
+                padding: 1.2rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- hero -->
+        <div class="hero">
+            <h1>im体育</h1>
+            <div class="sub">围绕赛事内容构建的轻量信息平台 —— 以连贯的浏览节奏，呈现竞技运动背后的数据与观察。</div>
+        </div>
+
+        <!-- 双卡片：摘要 + 亮点 -->
+        <div class="card-grid">
+            <div class="card">
+                <h2>摘要 · 产品轮廓</h2>
+                <p>im体育并不是一个喧哗的门户，而更像一间安静的阅览室。它围绕体育赛事，聚合比分、赛程、统计与短评，内容偏重实用与可读性。界面没有冗余装饰，信息层级清晰，适合花十分钟梳理当天赛况，也适合赛前快速查阅对阵细节。</p>
+            </div>
+            <div class="card">
+                <h2>几个实用亮点</h2>
+                <ul>
+                    <li>赛事卡片式排版，关键数据一目了然</li>
+                    <li>赛程按时间线排列，过去与未来自然衔接</li>
+                    <li>部分赛事附带简短技术统计，不堆砌数字</li>
+                    <li>整体加载轻快，移动端阅读无压力</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 使用建议 卡片 -->
+        <div class="full-card">
+            <h2>使用建议 · 怎样获得更好的浏览体验</h2>
+            <p>如果你习惯在周末上午浏览前一夜的赛果，或者想提前了解下一轮的日期，im体育 的布局会让你觉得顺手。推荐用桌面浏览器打开，同时保持网络稳定；移动端同样适配，但横屏下信息密度更高。</p>
+            <p>平台内容以即时更新为主，部分页面会随比赛进程自动刷新。建议不要频繁手动刷新，给数据同步留一点缓冲。对于深度分析类的内容，这里更偏重事实性汇总，而非长篇评论。</p>
+            <div class="note">
+                💡 你可以从 <a href="https://www-imsports.com" class="inline-link">im体育</a> 的首页开始，先看看当天热门赛事的卡片布局，再按联赛或时间筛选。
+            </div>
+        </div>
+
+        <!-- FAQ 摘要 + 场景提示 -->
+        <div class="full-card">
+            <h2>常见疑问与场景提示</h2>
+            <div class="faq-item">
+                <strong>内容更新频率如何？</strong>
+                <p>核心赛事数据（比分、状态）在比赛进行期间保持分钟级更新。赛程与历史统计每日同步。非高峰时段更新节奏会放缓，以保持服务器响应稳定。</p>
+            </div>
+            <div class="faq-item">
+                <strong>是否需要注册或登录？</strong>
+                <p>浏览公开赛程、比分与基础统计不需要任何账户。部分个性化功能（如收藏赛事、历史记录）可能需要简易的本地存储或可选登录，但目前平台以开放浏览为主。</p>
+            </div>
+            <div class="faq-item">
+                <strong>适合哪些使用场景？</strong>
+                <p>晨间快速浏览隔夜赛果、通勤时查看当日赛程、赛前核对首发与场地信息。不适用于实时直播或高频率交易参考场景——数据虽及时，但并非毫秒级推送。</p>
+            </div>
+            <div class="note">
+                ⚡ 如果你关注某个特定联赛或队伍，可以直接在站内搜索关键词，相关卡片会被优先展示。
+            </div>
+        </div>
+
+        <!-- 一个可信但克制的访问说明 -->
+        <div class="full-card" style="background: #f9fafb;">
+            <h2>访问说明 · 一点务实提醒</h2>
+            <p><a href="https://www-imsports.com" class="inline-link">im体育</a> 是公开可访问的网站，无需安装额外软件或插件。页面不包含自动播放的媒体与弹窗广告，加载过程安静。不过，鉴于网站数据来自多个数据源，极少数情况下可能出现短暂的数据延迟或条目错位，刷新即可恢复。</p>
+            <p>建议使用最新版本的 Chrome、Edge 或 Safari 浏览器访问，以获得完整的布局支持。如果你遇到任何显示问题，可以先检查浏览器缓存或尝试无痕模式。平台没有用户论坛或即时客服，但基础功能稳定，自主学习成本很低。</p>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="footer-note">
+            描述性说明 · 基于公开信息整理 · 内容仅供参考
+        </div>
+    </div>
+</body>
+</html>
